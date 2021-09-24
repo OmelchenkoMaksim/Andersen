@@ -1,1 +1,6 @@
 some text
+
+-------------
+
+text for second commit in first branch
+
