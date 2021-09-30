@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".ActivityWithZero">
+
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="showToastZero"
+        android:text="@string/button_toast"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="170dp"
+        android:layout_height="259dp"
+        android:layout_marginEnd="36dp"
+        android:background="#1EDFC3"
+        android:gravity="center"
+        android:text="@string/show_count_string"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_to_main_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.016"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/black"
+        android:onClick="countUpZero"
+        android:text="@string/button_count_string"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="countEqualsZero"
+        android:text="@string/to_zero"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_count"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button_to_main_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/black"
+        android:gravity="center|end"
+        android:onClick="toMainActivity"
+        android:text="@string/to_main_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/constraint_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_toast"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

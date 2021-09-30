@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A33333"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="screen"
+        android:onClick="showToast"
+        android:text="@string/button_toast"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:iconTint="@color/teal_700"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:text="@string/show_count_string"
+        android:textAlignment="center"
+        android:textColor="#A1887F"
+        android:textSize="120sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button_count"
+        style="@style/Platform.MaterialComponents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/purple_200"
+        android:onClick="countUp"
+        android:text="@string/button_count_string"
+        android:textColor="#880E4F"
+        android:textSize="24sp"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button_to_next_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/black"
+        android:gravity="center|end"
+        android:onClick="toZeroActivity"
+        android:text="@string/to_zero_activity"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/textRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:text="@string/LinearLayout" />
+
+</LinearLayout>
