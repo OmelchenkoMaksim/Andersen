@@ -67,10 +67,15 @@ class ActivityWithZero : AppCompatActivity() {
 
     fun toMainActivity(view: View) {
         Toast.makeText(this, R.string.toast_message_change_activity, Toast.LENGTH_SHORT).show()
-        val zeroAct: Intent = Intent(applicationContext, MainActivity::class.java)
-        zeroAct.putExtra("count", count)
-        startActivity(zeroAct)
+        val zeroActIntent: Intent = Intent(applicationContext, MainActivity::class.java)
+        zeroActIntent.putExtra("count", count)
+        startActivity(zeroActIntent)
     }
 
-
+    fun toScrollViewActivity(view: View) {
+        Toast.makeText(this, R.string.toast_message_change_activity, Toast.LENGTH_SHORT).show()
+        val scrollViewActivityIntent: Intent = Intent(applicationContext, ScrollViewActivity::class.java)
+        scrollViewActivityIntent.putExtra("count", count)
+        startActivity(scrollViewActivityIntent)
+    }
 }

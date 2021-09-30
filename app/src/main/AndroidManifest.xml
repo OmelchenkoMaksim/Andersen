@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Andersen1">
         <activity
+            android:name=".ScrollViewActivity"
+            android:exported="true" />
+        <activity
             android:name=".ActivityWithZero"
             android:exported="true"
             android:label="@string/title_activity_with_zero"

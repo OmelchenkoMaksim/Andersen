@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A33333"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
 
     <Button
@@ -21,7 +19,6 @@
         android:text="@string/button_toast"
         android:textColor="@color/white"
         android:visibility="visible"
-        app:iconTint="@color/teal_700"
         tools:ignore="UsingOnClickInXml" />
 
     <TextView
