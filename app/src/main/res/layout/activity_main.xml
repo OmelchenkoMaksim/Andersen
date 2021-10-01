@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A33333"
@@ -14,11 +13,9 @@
         android:layout_weight="1"
         android:backgroundTint="@color/black"
         android:backgroundTintMode="screen"
-        android:onClick="showToast"
         android:text="@string/button_toast"
         android:textColor="@color/white"
-        android:visibility="visible"
-        tools:ignore="UsingOnClickInXml" />
+        android:visibility="visible" />
 
     <TextView
         android:id="@+id/show_count"
@@ -40,23 +37,19 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="@color/purple_200"
-        android:onClick="countUp"
         android:text="@string/button_count_string"
-        android:textColor="#880E4F"
-        android:textSize="24sp"
-        tools:ignore="UsingOnClickInXml" />
+        android:textColor="@color/black"
+        android:textSize="@dimen/big_text" />
 
     <Button
-        android:id="@+id/button_to_next_activity"
+        android:id="@+id/button_to_two_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/padding_regular"
         android:layout_weight="1"
         android:backgroundTint="@color/black"
         android:gravity="center|end"
-        android:onClick="toZeroActivity"
-        android:text="@string/to_zero_activity"
-        tools:ignore="UsingOnClickInXml" />
+        android:text="@string/to_zero_activity" />
 
     <TextView
         android:id="@+id/textRelativeLayout"

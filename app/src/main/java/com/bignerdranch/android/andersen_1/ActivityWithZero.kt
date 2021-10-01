@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity
 class ActivityWithZero : AppCompatActivity() {
 
     private var count: Int = 0
+    private var keyCount: String = "countState"
+    private var tagZeroActivity: String = ActivityWithZero::javaClass.name
     private lateinit var showCount: TextView
     private lateinit var buttonZero: Button
     private lateinit var buttonToScrollViewActivity: Button
@@ -39,12 +41,12 @@ class ActivityWithZero : AppCompatActivity() {
         buttonToast = findViewById(R.id.button_toast)
         buttonToast.setOnClickListener { showToastZero() }
 
-        Log.d("ActivityWithZero", getString(R.string.funny_log_dad))
+        Log.d(tagZeroActivity, getString(R.string.funny_log_dad))
         val argument: Bundle? = intent.extras
-        if (argument != null) count = intent.getIntExtra("count", 0)
+        if (argument != null) count = intent.getIntExtra(keyCount, 0)
         showCount = findViewById(R.id.show_count)
         if (savedInstanceState != null) {
-            count = savedInstanceState.getInt("count")
+            count = savedInstanceState.getInt(keyCount)
         }
         showCount.text = count.toString()
 
@@ -58,12 +60,12 @@ class ActivityWithZero : AppCompatActivity() {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        outState.putInt("count", count)
+        outState.putInt(keyCount, count)
         super.onSaveInstanceState(outState)
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        count = savedInstanceState.getInt("count")
+        count = savedInstanceState.getInt(keyCount)
         super.onRestoreInstanceState(savedInstanceState)
     }
 
@@ -84,7 +86,7 @@ class ActivityWithZero : AppCompatActivity() {
     private fun toMainActivity() {
         Toast.makeText(this, R.string.toast_message_change_activity, Toast.LENGTH_SHORT).show()
         val zeroActIntent = Intent(applicationContext, MainActivity::class.java)
-        zeroActIntent.putExtra("count", count)
+        zeroActIntent.putExtra(EXTRA_MESSAGE_MAIN, count)
         startActivity(zeroActIntent)
     }
 
@@ -92,7 +94,7 @@ class ActivityWithZero : AppCompatActivity() {
         Toast.makeText(this, R.string.toast_message_change_activity, Toast.LENGTH_SHORT).show()
         val scrollViewActivityIntent =
             Intent(applicationContext, ScrollViewActivity::class.java)
-        scrollViewActivityIntent.putExtra("count", count)
+        scrollViewActivityIntent.putExtra(EXTRA_MESSAGE_MAIN, count)
         startActivity(scrollViewActivityIntent)
     }
 }

@@ -26,15 +26,13 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/spacing_normal"
         android:layout_marginEnd="@dimen/spacing_normal"
-        android:layout_toStartOf="@+id/button_to_next_activity"
+        android:layout_toStartOf="@+id/button_to_two_activity"
         android:backgroundTint="@color/black"
-        android:onClick="toMainActivity"
         android:text="@string/to_main_activity"
-        android:textSize="@dimen/small_text"
-        tools:ignore="UsingOnClickInXml" />
+        android:textSize="@dimen/small_text" />
 
     <Button
-        android:id="@+id/button_to_next_activity"
+        android:id="@+id/button_to_two_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -42,35 +40,30 @@
         android:layout_marginTop="@dimen/spacing_normal"
         android:layout_marginEnd="@dimen/spacing_normal"
         android:backgroundTint="@color/black"
-        android:onClick="toTwoActivity"
         android:text="@string/to_two_activity"
-        android:textSize="@dimen/small_text"
-        tools:ignore="UsingOnClickInXml" />
+        android:textSize="@dimen/small_text" />
 
     <TextView
         android:id="@+id/title_of_scrollview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_to_next_activity"
+        android:layout_below="@+id/button_to_two_activity"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:textSize="20sp"
+        android:textSize="@dimen/big_text"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/article_subheading"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="111dp"
+        android:layout_marginTop="@dimen/were_large_spacing"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_subheading"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
@@ -88,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:autoLink="web"
-            android:lineSpacingExtra="5sp"
+            android:lineSpacingExtra="@dimen/spacing_small"
             android:padding="@dimen/padding_regular"
             android:text="@string/article" />
     </ScrollView>

@@ -7,16 +7,15 @@
     tools:context=".TwoActivitiesAndIntents">
 
     <Button
-        android:id="@+id/button_send"
+        android:id="@+id/button_to_second_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/spacing_large"
         android:backgroundTint="@color/grey"
-        android:onClick="launchSecondActivity"
         android:text="@string/send"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editText_main"

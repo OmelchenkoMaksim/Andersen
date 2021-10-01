@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/red"
@@ -15,12 +14,10 @@
         android:layout_marginEnd="8dp"
         android:backgroundTint="#D500F9"
         android:backgroundTintMode="screen"
-        android:onClick="showToast"
         android:text="@string/button_toast"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:visibility="visible"
-        tools:ignore="UsingOnClickInXml" />
+        android:visibility="visible" />
 
 
     <TextView
@@ -45,32 +42,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/show_count"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_normal"
         android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="countUp"
         android:text="@string/button_count_string"
-        android:textColor="#FFEA00"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        tools:ignore="UsingOnClickInXml" />
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button_to_next_activity"
+        android:id="@+id/button_to_two_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_count"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="@dimen/spacing_small"
         android:backgroundTint="@color/black"
-        android:onClick="toZeroActivity"
         android:text="@string/to_zero_activity"
-        android:textSize="10sp"
-        tools:ignore="SmallSp,UsingOnClickInXml" />
+        android:textSize="@dimen/small_text" />
 
     <TextView
         android:id="@+id/textRelativeLayout"
