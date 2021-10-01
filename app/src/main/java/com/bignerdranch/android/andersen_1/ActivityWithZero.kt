@@ -15,24 +15,44 @@ class ActivityWithZero : AppCompatActivity() {
     private var count: Int = 0
     private lateinit var showCount: TextView
     private lateinit var buttonZero: Button
+    private lateinit var buttonToScrollViewActivity: Button
+    private lateinit var buttonToMainActivity: Button
+    private lateinit var buttonCountUp: Button
+    private lateinit var buttonToast: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_with_zero)
-        Log.d("ActivityWithZero", "Hi DAD")
-        val argument: Bundle? = getIntent().getExtras()
+
+        buttonToScrollViewActivity = findViewById(R.id.button_to_scrollview_activity)
+        buttonToScrollViewActivity.setOnClickListener { toScrollViewActivity() }
+
+        buttonToMainActivity = findViewById(R.id.button_to_main_activity)
+        buttonToMainActivity.setOnClickListener { toMainActivity() }
+
+        buttonZero = findViewById(R.id.button_zero)
+        buttonZero.setOnClickListener(::countEqualsZero)
+
+        buttonCountUp = findViewById(R.id.button_count)
+        buttonCountUp.setOnClickListener { countUpZero() }
+
+        buttonToast = findViewById(R.id.button_toast)
+        buttonToast.setOnClickListener { showToastZero() }
+
+        Log.d("ActivityWithZero", getString(R.string.funny_log_dad))
+        val argument: Bundle? = intent.extras
         if (argument != null) count = intent.getIntExtra("count", 0)
         showCount = findViewById(R.id.show_count)
         if (savedInstanceState != null) {
             count = savedInstanceState.getInt("count")
         }
-        showCount.setText(count.toString())
-        buttonZero = findViewById(R.id.button_zero)
+        showCount.text = count.toString()
+
         if (count == 0) buttonZero.setBackgroundColor(Color.GRAY)
         if (count != 0) buttonZero.setBackgroundColor(Color.YELLOW)
     }
 
-    fun showToastZero(view: View) {
+    private fun showToastZero() {
         val toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT)
         toast.show()
     }
@@ -47,34 +67,31 @@ class ActivityWithZero : AppCompatActivity() {
         super.onRestoreInstanceState(savedInstanceState)
     }
 
-    fun countUpZero(view: View) {
+    private fun countUpZero() {
         count++
         if (count != 0) buttonZero.setBackgroundColor(Color.YELLOW)
         Toast.makeText(this, R.string.toast_message_increase, Toast.LENGTH_SHORT).show()
-        if (showCount != null) {
-            showCount.setText(count.toString())
-        }
+        showCount.text = count.toString()
     }
 
-    fun countEqualsZero(view: View) {
+    private fun countEqualsZero(view: View) {
         count = 0
         if (count == 0) view.setBackgroundColor(Color.GRAY)
         Toast.makeText(this, R.string.toast_message_to_zero, Toast.LENGTH_SHORT).show()
-        if (showCount != null) {
-            showCount.setText(count.toString())
-        }
+        showCount.text = count.toString()
     }
 
-    fun toMainActivity(view: View) {
+    private fun toMainActivity() {
         Toast.makeText(this, R.string.toast_message_change_activity, Toast.LENGTH_SHORT).show()
-        val zeroActIntent: Intent = Intent(applicationContext, MainActivity::class.java)
+        val zeroActIntent = Intent(applicationContext, MainActivity::class.java)
         zeroActIntent.putExtra("count", count)
         startActivity(zeroActIntent)
     }
 
-    fun toScrollViewActivity(view: View) {
+    private fun toScrollViewActivity() {
         Toast.makeText(this, R.string.toast_message_change_activity, Toast.LENGTH_SHORT).show()
-        val scrollViewActivityIntent: Intent = Intent(applicationContext, ScrollViewActivity::class.java)
+        val scrollViewActivityIntent =
+            Intent(applicationContext, ScrollViewActivity::class.java)
         scrollViewActivityIntent.putExtra("count", count)
         startActivity(scrollViewActivityIntent)
     }

@@ -14,8 +14,13 @@ class ScrollViewActivity : AppCompatActivity() {
 
     fun toMainActivity(view: View) {
         Toast.makeText(this, R.string.toast_message_change_activity, Toast.LENGTH_SHORT).show()
-        val scrollIntent: Intent = Intent(applicationContext, MainActivity::class.java)
+        val scrollIntent = Intent(applicationContext, MainActivity::class.java)
         startActivity(scrollIntent)
     }
 
+    fun toTwoActivity(view: View) {
+        Toast.makeText(this, R.string.toast_message_change_activity, Toast.LENGTH_SHORT).show()
+        val scrollIntent = Intent(applicationContext, TwoActivitiesAndIntents::class.java)
+        startActivity(scrollIntent)
+    }
 }

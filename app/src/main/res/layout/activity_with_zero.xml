@@ -7,19 +7,17 @@
     android:background="@color/red"
     tools:context=".ActivityWithZero">
 
-
     <Button
         android:id="@+id/button_toast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/teal_700"
-        android:onClick="showToastZero"
         android:text="@string/button_toast"
         app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/show_count"
@@ -42,24 +40,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/black"
-        android:onClick="countUpZero"
         android:text="@string/button_count_string"
         app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast"
-        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_zero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:onClick="countEqualsZero"
         android:text="@string/to_zero"
         app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_count"
-        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_to_main_activity"
@@ -68,12 +64,11 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/black"
         android:gravity="center|end"
-        android:onClick="toMainActivity"
         android:text="@string/to_main_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_to_scrollview_activity"
@@ -81,12 +76,11 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:gravity="center|end"
-        android:onClick="toScrollViewActivity"
         android:text="@string/to_scrollview_activity"
         app:layout_constraintBottom_toTopOf="@+id/button_to_main_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/ConstrainLayoutText"
@@ -96,6 +90,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_toast"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

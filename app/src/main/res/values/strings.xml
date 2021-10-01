@@ -20,7 +20,7 @@
     <string name="to_zero_activity">To Zero Activity</string>
     <string name="to_main_activity">To Main Activity</string>
     <string name="LinearLayout">LinearLayout</string>
-    <string name="relativelayout">RelativeLayout</string>
+    <string name="relativelayout">Relative\nLayout</string>
     <string name="to_zero">ZERO</string>
     <string name="constraint_layout">ConstraintLayout</string>
     <string name="to_scrollview_activity">To ScrollView Activity</string>
@@ -70,4 +70,10 @@
 \nУдачи в реализации себя как Android-разработчика, работайте упорно каждый день, поставьте себе цель и идите к ней:)</string>
     <string name="article_subheading">Советы начинающему андроид разработчику</string>
     <string name="article_title">BECOME AN ANDROID DEVELOPER</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="to_two_activity">to Two Activities</string>
+    <string name="message_received">Message Received</string>
+    <string name="send">SEND</string>
+    <string name="enter_your_message_here">Enter Your Message Here</string>
+    <string name="funny_log_dad">Hi DAD</string>
 </resources>

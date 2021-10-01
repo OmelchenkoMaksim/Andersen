@@ -6,7 +6,6 @@
     android:background="@color/red"
     android:orientation="vertical">
 
-
     <Button
         android:id="@+id/button_toast"
         android:layout_width="match_parent"
