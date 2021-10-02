@@ -7,6 +7,7 @@
     <dimen name="spacing_xlarge">32dp</dimen>
     <dimen name="small_text">10sp</dimen>
     <dimen name="big_text">24sp</dimen>
+    <dimen name="quite_big_text">20sp</dimen>
     <dimen name="text_normal">12sp</dimen>
     <dimen name="were_large_spacing">100dp</dimen>
     <dimen name="activity_with_zero_show_count_size">175dp</dimen>
