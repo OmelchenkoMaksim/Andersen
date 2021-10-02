@@ -75,6 +75,9 @@
     <string name="message_received">Message Received</string>
     <string name="send">SEND</string>
     <string name="enter_your_message_here">Enter Your Message Here</string>
+    <string name="enter_your_reply_here">Enter Your Reply Here</string>
     <string name="funny_log_dad">Hi DAD</string>
     <string name="funny_log_mom">Hi MOM</string>
+    <string name="log_what_happend_with_button">Button Clicked</string>
+    <string name="replied_message">Replied Message</string>
 </resources>

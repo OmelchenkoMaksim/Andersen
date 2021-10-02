@@ -11,9 +11,6 @@ import android.widget.TextView
 
 const val EXTRA_MESSAGE_SECOND_ACTIVITY: String =
     "com.big_nerd_ranch.android.andersen_1.second_activity.extra.MESSAGE"
-const val EXTRA_REPLY: String =
-    "com.big_nerd_ranch.android.andersen_1.twoactivities.extra.REPLY";
-lateinit var replyToFirst: String
 
 class SecondActivity : AppCompatActivity() {
 

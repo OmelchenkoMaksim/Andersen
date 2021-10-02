@@ -43,7 +43,7 @@ class ActivityWithZero : AppCompatActivity() {
 
         Log.d(tagZeroActivity, getString(R.string.funny_log_dad))
         val argument: Bundle? = intent.extras
-        if (argument != null) count = intent.getIntExtra(keyCount, 0)
+        if (argument != null) count = intent.getIntExtra(EXTRA_MESSAGE_MAIN, 0)
         showCount = findViewById(R.id.show_count)
         if (savedInstanceState != null) {
             count = savedInstanceState.getInt(keyCount)
