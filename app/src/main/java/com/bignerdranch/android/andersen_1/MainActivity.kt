@@ -37,7 +37,7 @@ open class MainActivity : AppCompatActivity() {
         buttonToZeroActivity.setOnClickListener(::toZeroActivity)
 
         val argument: Bundle? = intent.extras
-        if (argument != null) mCount = intent.getIntExtra(keyCount, 0)
+        if (argument != null) mCount = intent.getIntExtra(EXTRA_MESSAGE_MAIN, 0)
         if (savedInstanceState != null) {
             mCount = savedInstanceState.getInt(keyCount)
         }

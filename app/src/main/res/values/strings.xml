@@ -75,6 +75,20 @@
     <string name="message_received">Message Received</string>
     <string name="send">SEND</string>
     <string name="enter_your_message_here">Enter Your Message Here</string>
+    <string name="enter_your_reply_here">Enter Your Reply Here</string>
     <string name="funny_log_dad">Hi DAD</string>
     <string name="funny_log_mom">Hi MOM</string>
+    <string name="log_what_happend_with_button">Button Clicked</string>
+    <string name="replied_message">Replied Message</string>
+    <string name="log_spacing">_____________</string>
+    <string name="tag_on_create">onCreate</string>
+    <string name="log_on_start">onStart</string>
+    <string name="log_on_pause">onPause</string>
+    <string name="log_on_restart">onRestart</string>
+    <string name="log_on_resume">onResume</string>
+    <string name="log_on_stop">onStop</string>
+    <string name="log_on_destroy">onDestroy</string>
+    <string name="end_second_activity">End SECOND ACTIVITY</string>
+    <string name="reply_visible">reply_visible</string>
+    <string name="reply_text">reply_text</string>
 </resources>
