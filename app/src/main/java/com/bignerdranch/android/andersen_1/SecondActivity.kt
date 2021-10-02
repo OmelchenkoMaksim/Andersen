@@ -33,10 +33,41 @@ class SecondActivity : AppCompatActivity() {
         buttonLaunchPreviousActivity.setOnClickListener(::sendRequestedResult)
     }
 
+    override fun onStart() {
+        super.onStart()
+        Log.d(tagSecondActivity, getString(R.string.log_on_start))
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(tagSecondActivity, getString(R.string.log_on_pause))
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(tagSecondActivity, getString(R.string.log_on_restart))
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(tagSecondActivity, getString(R.string.log_on_resume))
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(tagSecondActivity, getString(R.string.log_on_stop))
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(tagSecondActivity, getString(R.string.log_on_destroy))
+    }
+
     private fun sendRequestedResult(view: View) {
         val intent = Intent(applicationContext, TwoActivitiesAndIntents::class.java)
         intent.putExtra(EXTRA_MESSAGE_SECOND_ACTIVITY, messageSendReply.text.toString())
         setResult(RESULT_OK, intent)
+        Log.d(tagSecondActivity, getString(R.string.end_second_activity))
         finish()
     }
 }

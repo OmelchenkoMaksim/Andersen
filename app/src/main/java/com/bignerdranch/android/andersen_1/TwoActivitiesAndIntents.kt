@@ -3,6 +3,7 @@ package com.bignerdranch.android.andersen_1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
@@ -25,19 +26,65 @@ class TwoActivitiesAndIntents : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_two_activities_and_intents)
         Log.d(tagTwoActivitiesAndIntents, getString(R.string.funny_log_dad))
-
-        val intent: Intent = intent
-        val message = intent.getStringExtra(EXTRA_MESSAGE_SECOND_ACTIVITY)
-
-        messageEditText = findViewById(R.id.message_for_sent_to_second)
-
-        textViewRepliedMessage = findViewById(R.id.text_message_replied)
-        textViewRepliedMessage.text = message
+        Log.d(tagTwoActivitiesAndIntents, getString(R.string.log_spacing))
+        Log.d(tagTwoActivitiesAndIntents, getString(R.string.tag_on_create))
 
         textViewHeader = findViewById(R.id.text_header)
 
+        val intent: Intent = intent
+        val message = intent.getStringExtra(EXTRA_MESSAGE_SECOND_ACTIVITY)
+        textViewRepliedMessage = findViewById(R.id.text_message_replied)
+        textViewRepliedMessage.text = message
+
+        if (savedInstanceState != null){
+            if (savedInstanceState.getBoolean(getString(R.string.reply_visible))){
+                textViewHeader.visibility = View.VISIBLE
+                textViewRepliedMessage.text = savedInstanceState.getString(getString(R.string.reply_text))
+                textViewRepliedMessage.visibility = View.VISIBLE
+            }
+        }
+        messageEditText = findViewById(R.id.message_for_sent_to_second)
+
         buttonLaunchSecondActivity = findViewById(R.id.button_to_second_activity)
         buttonLaunchSecondActivity.setOnClickListener(::launchSecondActivity)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d(tagTwoActivitiesAndIntents, getString(R.string.log_on_start))
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(tagTwoActivitiesAndIntents, getString(R.string.log_on_pause))
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(tagTwoActivitiesAndIntents, getString(R.string.log_on_restart))
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(tagTwoActivitiesAndIntents, getString(R.string.log_on_resume))
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(tagTwoActivitiesAndIntents, getString(R.string.log_on_stop))
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(tagTwoActivitiesAndIntents, getString(R.string.log_on_destroy))
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        if (textViewHeader.visibility == View.VISIBLE) {
+            outState.putBoolean(getString(R.string.reply_visible), true)
+            outState.putString(getString(R.string.reply_text), textViewRepliedMessage.text.toString())
+        }
     }
 
     private fun launchSecondActivity(view: View) {
