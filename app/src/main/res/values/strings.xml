@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">My Andersen App</string>
+    <string name="hello">HI MIR\nETO TEXT FOR EXAMPLE\n\n\n\nONE__TWO</string>
+    <string name="button_toast">Toast</string>
+    <string name="button_count_string">Count</string>
+    <string name="show_count_string">0</string>
+    <string name="toast_message">I,m toast message</string>
+    <string name="toast_message_to_zero">Все что было до меня обнуляй</string>
+    <string name="toast_message_increase">+ раз</string>
+    <string name="toast_message_change_activity">ПОЕХАЛИ !!!</string>
+    <string name="title_activity_with_zero">ActivityWithZero</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="to_zero_activity">To Zero Activity</string>
+    <string name="to_main_activity">To Main Activity</string>
+    <string name="LinearLayout">LinearLayout</string>
+    <string name="relativelayout">Relative\nLayout</string>
+    <string name="to_zero">ZERO</string>
+    <string name="constraint_layout">ConstraintLayout</string>
+    <string name="to_scrollview_activity">To ScrollView Activity</string>
+    <string name="article">Если специализация разработчик андроид приложений привлекает вас, мы дадим несколько советов о том, с чего начать.
+Вы должны действительно гореть разработкой на Android и хотеть развиваться в этом направлении. Ситуация усложняется тем, что множество смартфонов разных компаний используют Android, а обновления появляются медленно, что сказывается на том, чтобы сделать такое приложение, которое подойдет под разные размеры экранов и версии систем. Будьте к этому готовы.
+\nВам необходимо разобраться в целом в методологии разработки мобильных приложений, а также развить в себе необходимое мышление - нужно помнить о том, что ресурсы мобильных телефонов не безграничны. Разработчики андроид приложений должны заботиться о производительности процессора, объеме памяти и батарее. Если сделать приложение некачественно, его в скором времени удалят.
+\nНачать лучше всего с курсом программирования на Android, где у вас будет ментор, который сможет вам дать фидбек по коду и архитектуре.
+\nПараллельно читайте литературу, блоги и смотрите видео-обучалки. Важно: ищете контент на английском языке, так как самые прогрессивные материалы по разработке Android именно в англоязычном интернете.
+\nТребования компаний к Андроид разработчикам начального уровня
+\nДля того, чтобы устроиться в профессиональную компанию андроид-разработчиком, вам необходимы следующие навыки:
+\n
+\nGood knowledge of Java for Android development
+\nGood knowledge XML/JSON/SQL/GIT
+\nGood understanding OOP/OOD/SOLID principles
+\nGood understanding UI/UX principles and experience with customizing UI
+\nExperience with back end integration using REST API
+\nProblem-solving skills
+\nEnglish level - Intermediate
+\nКак видите, большинство компаний публикуют требования на английском языке, что говорит о его важности для разработчика.
+\n
+\nКак получить работу Junior разработчика Андроид приложений
+\nЕсли создание приложений для android - это, чем вы хотите заниматься профессионально, в хорошей команде, вам нужно попасть в IT-компанию.
+\n
+\nДля того несколько месяцев обучайтесь самостоятельно - освойте базовые навыки, напишите несколько пробных приложений.
+\n
+\nВ помощь вам интернет-ресурс Upwork, где вы можете увидеть реальные задачи по Android и пробовать их сделать. На первых порах даже не берите заказ, а просто работайте над задачей без дедлайна и обязательств.
+\n
+\nЗатем пробуйте силы в небольших местных компаниях, где вы получите опыт командной работы, поймете, как в целом разрабатываются приложения.
+\n
+\nИ, конечно же, посещайте тематические мероприятия, слушайте доклады от профессионалов и знакомьтесь с другими разработчиками, обменивайтесь опытом.
+\n
+\nСоветы от Android разработчиков Artjoker
+\nНесколько советов по обучению разработке на Android от команды Artjoker.
+\n
+\nРазберитесь, как устроен код и функционал фреймворков Android. Вы узнаете много нового и сложите в систему фрагменты знаний о разработке.
+\nНе пытайтесь объять необъятное - изучайте вещи, которые нужны конкретно сейчас для разработки конкретного приложения. В свободное время изучайте то, что вас заинтересовало. Android - как айсберг, если вы изучили что-то и считаете, что этого достаточно, одумайтесь, вы знаете только 30%.
+\nПерспективный разработчик приложений для android изучает передовой опыт коллег. Вы можете просматривать библиотеки и программы с открытым исходным кодом, делать выводы и реализовывать новые техники на своих проектах, тем самым улучшая их.
+\nИзучайте шаблоны проектирования Java - они значительно облегчат вам разработку и помогут быть в теме, когда другие разработчики будут обсуждать их.
+\nОбщайтесь с mobile-дизайнерами - будет ли приложение интуитивно понятным зависит не только от UI/UX-дизайнера.
+\nВозьмите за правило пользоваться горячими клавишами при работе над приложением - оптимизируйте свое время.
+\nСледите за тенденциями - набирает обороты язык программирования Kotlin. Специалисты, которые умеют с ним работать, вскоре будут очень востребованы.
+\nВам будет полезно:
+\ndeveloper.android.com - сайт, на котором собрана полезная документация для разработчиков
+\nAndroid Wear - версия операционной системы Google Android, с помощью которой вы можете программировать приложения для умных часов и других носимых устройств.
+\nARCore - это платформа для мобильных приложений с дополненной реальностью. Учитывая быстро развивающиеся темпы дополненной реальности, полезно изучить тему.
+\nAndroid Auto, Android Things и Android TV - все эти сервисы и программы также показывают, что сфера не ограничивается только разработкой для смартфонов, так что у вас большой потенциал!
+\nУдачи в реализации себя как Android-разработчика, работайте упорно каждый день, поставьте себе цель и идите к ней:)</string>
+    <string name="article_subheading">Советы начинающему андроид разработчику</string>
+    <string name="article_title">BECOME AN ANDROID DEVELOPER</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="to_two_activity">to Two Activities</string>
+    <string name="message_received">Message Received</string>
+    <string name="send">SEND</string>
+    <string name="enter_your_message_here">Enter Your Message Here</string>
+    <string name="funny_log_dad">Hi DAD</string>
+    <string name="funny_log_mom">Hi MOM</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".ActivityWithZero">
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/button_toast"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="@dimen/activity_with_zero_show_count_size"
+        android:layout_height="@dimen/activity_with_zero_show_count_size"
+        android:layout_marginEnd="@dimen/activity_with_zero_dimension_count_size"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="@string/show_count_string"
+        android:textSize="@dimen/activity_with_zero_text_count_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConstrainLayoutText"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:backgroundTint="@color/black"
+        android:text="@string/button_count_string"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_toast"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/to_zero"
+        app:layout_constraintEnd_toStartOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_count"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_to_main_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:backgroundTint="@color/black"
+        android:gravity="center|end"
+        android:text="@string/to_main_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_to_scrollview_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:gravity="center|end"
+        android:text="@string/to_scrollview_activity"
+        app:layout_constraintBottom_toTopOf="@+id/button_to_main_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ConstrainLayoutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/constraint_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_toast"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
