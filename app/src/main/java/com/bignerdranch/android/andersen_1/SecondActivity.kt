@@ -64,7 +64,7 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun sendRequestedResult(view: View) {
-        val intent = Intent(applicationContext, TwoActivitiesAndIntents::class.java)
+        val intent = Intent()
         intent.putExtra(EXTRA_MESSAGE_SECOND_ACTIVITY, messageSendReply.text.toString())
         setResult(RESULT_OK, intent)
         Log.d(tagSecondActivity, getString(R.string.end_second_activity))
