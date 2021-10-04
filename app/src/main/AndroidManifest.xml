@@ -4,13 +4,35 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndersenFlagsOfCountries041021">
         <activity
-            android:name=".MainActivity"
+            android:name=".Poland08"
+            android:exported="true" />
+        <activity
+            android:name=".Austria07"
+            android:exported="true" />
+        <activity
+            android:name=".Switzerland06"
+            android:exported="true" />
+        <activity
+            android:name=".Denmark05"
+            android:exported="true" />
+        <activity
+            android:name=".Thailand04"
+            android:exported="true" />
+        <activity
+            android:name=".Madagascar03"
+            android:exported="true" />
+        <activity
+            android:name=".Colombia02"
+            android:exported="true" />
+        <activity
+            android:name=".Italy01"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

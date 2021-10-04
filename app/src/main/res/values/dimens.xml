@@ -1,0 +1,6 @@
+<resources>
+        <dimen name="fab_margin">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_huge">32dp</dimen>
+    <dimen name="title_size">32sp</dimen>
+</resources>
