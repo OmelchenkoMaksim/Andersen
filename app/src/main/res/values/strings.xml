@@ -17,5 +17,5 @@
     <string name="title_denmark">Denmark</string>
     <string name="title_switzerland">Switzerland</string>
     <string name="title_austria">Austria</string>
-    <string name="title_poland">Poland</string>
+    <string name="title_poland">Poland (FrameLayout)</string>
 </resources>

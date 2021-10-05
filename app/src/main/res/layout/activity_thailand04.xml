@@ -8,7 +8,7 @@
     tools:context=".Thailand04">
 
 
-    <TextView
+    <View
         android:id="@+id/white_italy2"
         android:layout_width="300dp"
         android:layout_height="33dp"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
+    <View
         android:id="@+id/green_italy"
         android:layout_width="300dp"
         android:layout_height="33dp"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <View
         android:id="@+id/white_italy"
         android:layout_width="300dp"
         android:layout_height="33dp"
@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/green_italy" />
 
-    <TextView
+    <View
         android:id="@+id/white_italy3"
         android:layout_width="300dp"
         android:layout_height="33dp"
@@ -60,7 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/white_italy2" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy"
         android:layout_width="300dp"
         android:layout_height="66dp"

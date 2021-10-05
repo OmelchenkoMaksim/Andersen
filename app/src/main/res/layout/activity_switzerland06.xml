@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
+    <View
         android:id="@+id/green_italy"
         android:layout_width="82.5dp"
         android:layout_height="200dp"
@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <View
         android:id="@+id/white_italy"
         android:layout_width="45dp"
         android:layout_height="0dp"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toEndOf="@+id/red_italy3"
         app:layout_constraintTop_toBottomOf="@+id/red_italy" />
 
-    <TextView
+    <View
         android:id="@+id/white_italy5"
         android:layout_width="135dp"
         android:layout_height="45dp"
@@ -50,7 +50,7 @@
         app:layout_constraintStart_toEndOf="@+id/green_italy"
         app:layout_constraintTop_toBottomOf="@+id/red_italy3" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy"
         android:layout_width="217.5dp"
         android:layout_height="32.5dp"
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toEndOf="@+id/green_italy"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy3"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -67,7 +67,7 @@
         app:layout_constraintStart_toEndOf="@+id/green_italy"
         app:layout_constraintTop_toBottomOf="@+id/red_italy" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy4"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -76,7 +76,7 @@
         app:layout_constraintStart_toEndOf="@+id/green_italy"
         app:layout_constraintTop_toBottomOf="@+id/white_italy5" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy5"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -84,7 +84,7 @@
         app:layout_constraintStart_toEndOf="@+id/white_italy"
         app:layout_constraintTop_toBottomOf="@+id/white_italy5" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy7"
         android:layout_width="82.5dp"
         android:layout_height="0dp"
@@ -93,7 +93,7 @@
         app:layout_constraintStart_toEndOf="@+id/white_italy5"
         app:layout_constraintTop_toBottomOf="@+id/red_italy" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy8"
         android:layout_width="217.5dp"
         android:layout_height="32.5dp"
@@ -101,7 +101,7 @@
         app:layout_constraintStart_toEndOf="@+id/green_italy"
         app:layout_constraintTop_toBottomOf="@+id/red_italy4" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy6"
         android:layout_width="45dp"
         android:layout_height="45dp"

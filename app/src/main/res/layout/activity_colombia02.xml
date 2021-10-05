@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
+    <View
         android:id="@+id/green_italy"
         android:layout_width="300dp"
         android:layout_height="100dp"
@@ -33,7 +33,7 @@
         android:layout_marginEnd="@dimen/spacing_huge"
         android:background="@color/yellow_colombia" />
 
-    <TextView
+    <View
         android:id="@+id/white_italy"
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -42,7 +42,7 @@
         android:background="@color/purple_700"
         app:layout_constraintStart_toEndOf="@+id/green_italy" />
 
-    <TextView
+    <View
         android:id="@+id/red_italy"
         android:layout_width="300dp"
         android:layout_height="50dp"
