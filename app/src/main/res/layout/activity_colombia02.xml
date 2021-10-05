@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context=".Colombia02">
 
-
     <TextView
         android:id="@+id/title_colombia"
         android:layout_width="wrap_content"
@@ -25,31 +24,31 @@
 
 
     <View
-        android:id="@+id/green_italy"
+        android:id="@+id/red"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
         android:layout_marginStart="@dimen/spacing_huge"
         android:layout_marginEnd="@dimen/spacing_huge"
-        android:background="@color/yellow_colombia" />
+        android:background="@color/yellow_dark" />
 
     <View
-        android:id="@+id/white_italy"
+        android:id="@+id/white"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="@dimen/spacing_huge"
         android:layout_marginEnd="@dimen/spacing_huge"
         android:background="@color/purple_700"
-        app:layout_constraintStart_toEndOf="@+id/green_italy" />
+        app:layout_constraintStart_toEndOf="@+id/red" />
 
     <View
-        android:id="@+id/red_italy"
+        android:id="@+id/red2"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="@dimen/spacing_huge"
         android:layout_marginEnd="@dimen/spacing_huge"
         android:background="@color/red"
-        app:layout_constraintStart_toEndOf="@+id/white_italy" />
+        app:layout_constraintStart_toEndOf="@+id/white" />
 
     <Button
         android:id="@+id/button_to_next_country"

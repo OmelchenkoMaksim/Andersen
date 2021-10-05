@@ -7,7 +7,6 @@
     android:background="@color/main_background"
     tools:context=".Switzerland06">
 
-
     <TextView
         android:id="@+id/title_switzerland"
         android:layout_width="wrap_content"
@@ -24,7 +23,7 @@
 
 
     <View
-        android:id="@+id/green_italy"
+        android:id="@+id/red"
         android:layout_width="82.5dp"
         android:layout_height="200dp"
         android:layout_marginStart="@dimen/spacing_huge"
@@ -34,82 +33,82 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/white_italy"
+        android:id="@+id/white"
         android:layout_width="45dp"
         android:layout_height="0dp"
         android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/red_italy8"
-        app:layout_constraintStart_toEndOf="@+id/red_italy3"
-        app:layout_constraintTop_toBottomOf="@+id/red_italy" />
+        app:layout_constraintBottom_toTopOf="@+id/red_8"
+        app:layout_constraintStart_toEndOf="@+id/red_3"
+        app:layout_constraintTop_toBottomOf="@+id/red2" />
 
     <View
-        android:id="@+id/white_italy5"
+        android:id="@+id/white_01"
         android:layout_width="135dp"
         android:layout_height="45dp"
         android:background="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/green_italy"
-        app:layout_constraintTop_toBottomOf="@+id/red_italy3" />
+        app:layout_constraintStart_toEndOf="@+id/red"
+        app:layout_constraintTop_toBottomOf="@+id/red_3" />
 
     <View
-        android:id="@+id/red_italy"
+        android:id="@+id/red2"
         android:layout_width="217.5dp"
         android:layout_height="32.5dp"
         android:layout_marginTop="200dp"
         android:background="@color/red"
-        app:layout_constraintStart_toEndOf="@+id/green_italy"
+        app:layout_constraintStart_toEndOf="@+id/red"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/red_italy3"
+        android:id="@+id/red_3"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:background="@color/red"
-        app:layout_constraintStart_toEndOf="@+id/green_italy"
-        app:layout_constraintTop_toBottomOf="@+id/red_italy" />
+        app:layout_constraintStart_toEndOf="@+id/red"
+        app:layout_constraintTop_toBottomOf="@+id/red2" />
 
     <View
-        android:id="@+id/red_italy4"
+        android:id="@+id/red_4"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:background="@color/red"
-        app:layout_constraintEnd_toStartOf="@+id/white_italy"
-        app:layout_constraintStart_toEndOf="@+id/green_italy"
-        app:layout_constraintTop_toBottomOf="@+id/white_italy5" />
+        app:layout_constraintEnd_toStartOf="@+id/white"
+        app:layout_constraintStart_toEndOf="@+id/red"
+        app:layout_constraintTop_toBottomOf="@+id/white_01" />
 
     <View
-        android:id="@+id/red_italy5"
+        android:id="@+id/red_5"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:background="@color/red"
-        app:layout_constraintStart_toEndOf="@+id/white_italy"
-        app:layout_constraintTop_toBottomOf="@+id/white_italy5" />
+        app:layout_constraintStart_toEndOf="@+id/white"
+        app:layout_constraintTop_toBottomOf="@+id/white_01" />
 
     <View
-        android:id="@+id/red_italy7"
+        android:id="@+id/red_7"
         android:layout_width="82.5dp"
         android:layout_height="0dp"
         android:background="@color/red"
-        app:layout_constraintBottom_toTopOf="@+id/red_italy8"
-        app:layout_constraintStart_toEndOf="@+id/white_italy5"
-        app:layout_constraintTop_toBottomOf="@+id/red_italy" />
+        app:layout_constraintBottom_toTopOf="@+id/red_8"
+        app:layout_constraintStart_toEndOf="@+id/white_01"
+        app:layout_constraintTop_toBottomOf="@+id/red2" />
 
     <View
-        android:id="@+id/red_italy8"
+        android:id="@+id/red_8"
         android:layout_width="217.5dp"
         android:layout_height="32.5dp"
         android:background="@color/red"
-        app:layout_constraintStart_toEndOf="@+id/green_italy"
-        app:layout_constraintTop_toBottomOf="@+id/red_italy4" />
+        app:layout_constraintStart_toEndOf="@+id/red"
+        app:layout_constraintTop_toBottomOf="@+id/red_4" />
 
     <View
-        android:id="@+id/red_italy6"
+        android:id="@+id/red_6"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:background="@color/red"
-        app:layout_constraintBottom_toTopOf="@+id/white_italy5"
-        app:layout_constraintEnd_toStartOf="@+id/red_italy7"
-        app:layout_constraintStart_toEndOf="@+id/white_italy"
-        app:layout_constraintTop_toBottomOf="@+id/red_italy" />
+        app:layout_constraintBottom_toTopOf="@+id/white_01"
+        app:layout_constraintEnd_toStartOf="@+id/red_7"
+        app:layout_constraintStart_toEndOf="@+id/white"
+        app:layout_constraintTop_toBottomOf="@+id/red2" />
 
     <Button
         android:id="@+id/button_to_next_country"

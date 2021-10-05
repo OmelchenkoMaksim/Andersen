@@ -9,6 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#E40A0A</color>
     <color name="main_background">#E3FF82</color>
-    <color name="green_italy">#009146</color>
-    <color name="yellow_colombia">#D0A500</color>
+    <color name="green">#009146</color>
+    <color name="yellow_dark">#D0A500</color>
 </resources>

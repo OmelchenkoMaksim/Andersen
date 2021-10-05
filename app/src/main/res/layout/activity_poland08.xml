@@ -7,7 +7,6 @@
     android:background="@color/main_background"
     tools:context=".Poland08">
 
-
     <TextView
         android:id="@+id/title_poland"
         android:layout_width="wrap_content"
@@ -24,7 +23,7 @@
 
 
     <View
-        android:id="@+id/white_italy"
+        android:id="@+id/white"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginStart="32dp"
@@ -34,14 +33,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/red_italy"
+        android:id="@+id/red2"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginTop="300dp"
         android:layout_marginStart="32dp"
         android:background="@color/red"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/white_italy" />
+        app:layout_constraintTop_toBottomOf="@+id/white" />
 
     <Button
         android:id="@+id/button_to_next_country"
