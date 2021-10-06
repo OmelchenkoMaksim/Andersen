@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Andersen Image Downloader By Link 04.10.21</string>
+    <string name="paste_url_from_https_picsum_photos">paste URL from https://picsum.photos/</string>
 </resources>
