@@ -11,28 +11,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndersenFlagsOfCountries041021">
         <activity
-            android:name=".Poland08"
+            android:name=".Poland"
             android:exported="true" />
         <activity
-            android:name=".Austria07"
+            android:name=".Austria"
             android:exported="true" />
         <activity
-            android:name=".Switzerland06"
+            android:name=".Switzerland"
             android:exported="true" />
         <activity
-            android:name=".Denmark05"
+            android:name=".Denmark"
             android:exported="true" />
         <activity
-            android:name=".Thailand04"
+            android:name=".Thailand"
             android:exported="true" />
         <activity
-            android:name=".Madagascar03"
+            android:name=".Madagascar"
             android:exported="true" />
         <activity
-            android:name=".Colombia02"
+            android:name=".Colombia"
             android:exported="true" />
         <activity
-            android:name=".Italy01"
+            android:name=".Italy"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,18 +6,17 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 
-class Colombia02 : AppCompatActivity() {
+class Madagascar : AppCompatActivity() {
+
     private lateinit var buttonNextCountry: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_colombia02)
-
+        setContentView(R.layout.activity_madagascar)
         buttonNextCountry = findViewById(R.id.button_to_next_country)
         buttonNextCountry.setOnClickListener(::toNextCountry)
     }
-
     private fun toNextCountry(view: View) {
-        val intent = Intent(this, Madagascar03::class.java)
+        val intent = Intent(this, Thailand::class.java)
         startActivity(intent)
     }
 }

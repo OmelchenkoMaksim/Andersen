@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_background"
-    tools:context=".Italy01">
+    tools:context=".Poland">
 
     <TextView
-        android:id="@+id/title_italy"
+        android:id="@+id/title_poland"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_huge"
         android:layout_marginTop="@dimen/spacing_huge"
         android:layout_marginEnd="@dimen/spacing_huge"
-        android:text="@string/title_italy"
+        android:text="@string/title_poland"
         android:textSize="@dimen/title_size"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,32 +23,24 @@
 
 
     <View
-        android:id="@+id/red"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="@dimen/spacing_huge"
+        android:id="@+id/white"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="200dp"
-        android:background="@color/green"
+        android:background="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/white"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="200dp"
-        android:background="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/red"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
         android:id="@+id/red2"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="32dp"
         android:background="@color/red"
-        app:layout_constraintStart_toEndOf="@+id/white"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/white" />
 
     <Button
         android:id="@+id/button_to_next_country"
@@ -56,9 +48,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_huge"
         android:layout_marginBottom="@dimen/spacing_huge"
+        android:layout_marginTop="432dp"
         android:backgroundTint="@color/black"
         android:text="@string/next_country"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
