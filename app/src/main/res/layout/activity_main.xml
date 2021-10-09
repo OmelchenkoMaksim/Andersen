@@ -4,13 +4,12 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android.andersenclock061021.MainActivity"
-    android:background="@android:color/black"
-    >
+    android:background="@color/light_green"
+    tools:context="com.android.andersenclock061021.MainActivity">
 
-    <com.android.andersenclock061021.ClockView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true"/>
+    <com.android.andersenclock061021.MyClock
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp" />
 
 </RelativeLayout>
