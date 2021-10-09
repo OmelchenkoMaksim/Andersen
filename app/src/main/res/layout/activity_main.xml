@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/shopping_list_main"
+        style="@style/Widget.MaterialComponents.Snackbar.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@color/teal_200"
+        android:text="@string/my_shopping_list"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/good_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/large_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopping_list_main" />
+
+    <TextView
+        android:id="@+id/good_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_0" />
+
+    <TextView
+        android:id="@+id/good_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_1" />
+
+    <TextView
+        android:id="@+id/good_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_2" />
+
+    <TextView
+        android:id="@+id/good_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_3" />
+
+    <TextView
+        android:id="@+id/good_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_4" />
+
+    <TextView
+        android:id="@+id/good_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_5" />
+
+    <TextView
+        android:id="@+id/good_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_6" />
+
+    <TextView
+        android:id="@+id/good_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_7" />
+
+    <TextView
+        android:id="@+id/good_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_8" />
+
+    <Button
+        android:id="@+id/button_to_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:layout_marginBottom="@dimen/large_spacing"
+        android:backgroundTint="@color/black"
+        android:text="@string/button_choose_goods"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:inputType="textPersonName"
+        android:hint="@string/edittext_text"
+        app:layout_constraintBottom_toTopOf="@+id/button_to_goods"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_search_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginBottom="@dimen/large_spacing"
+        android:backgroundTint="@color/black"
+        android:text="@string/button_search"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

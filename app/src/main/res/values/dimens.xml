@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_spacing">24dp</dimen>
+    <dimen name="big_spacing">16dp</dimen>
+    <dimen name="text_big">16sp</dimen>
+    <dimen name="spacing_small">6dp</dimen>
+    <dimen name="spacing_tiny">2dp</dimen>
+    <dimen name="normal_size">12sp</dimen>
+    <dimen name="special_height">34dp</dimen>
+</resources>

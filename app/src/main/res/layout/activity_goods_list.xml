@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".GoodsList">
+
+    <TextView
+        android:id="@+id/shopping_list_main"
+        style="@style/Widget.MaterialComponents.Snackbar.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@color/teal_200"
+        android:text="@string/what_i_need"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/good_0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/water"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopping_list_main" />
+
+    <Button
+        android:id="@+id/good_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/chocholate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_0" />
+
+    <Button
+        android:id="@+id/good_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/meet"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_1" />
+
+    <Button
+        android:id="@+id/good_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/oil"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_2" />
+
+    <Button
+        android:id="@+id/good_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/milk"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_3" />
+
+    <Button
+        android:id="@+id/good_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/potato"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_4" />
+
+    <Button
+        android:id="@+id/good_6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/rise"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_5" />
+
+    <Button
+        android:id="@+id/good_7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/grechka"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_6" />
+
+    <Button
+        android:id="@+id/good_8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_7" />
+
+    <Button
+        android:id="@+id/good_9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/special_height"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        android:text="@string/cola"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_8" />
+
+    <Button
+        android:id="@+id/button_to_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/large_spacing"
+        android:layout_marginBottom="@dimen/large_spacing"
+        android:backgroundTint="@color/black"
+        android:text="@string/back_to_choose_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

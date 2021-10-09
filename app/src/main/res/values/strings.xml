@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Andersen Shopping List</string>
+    <string name="my_shopping_list">Мой Список Покупок</string>
+    <string name="button_choose_goods">ВЫБРАТЬ ПОКУПКИ</string>
+    <string name="back_to_choose_list">ВЕРНУТСЯ К СПИСКУ</string>
+    <string name="water">Вода</string>
+    <string name="meet">Мясо</string>
+    <string name="oil">Масло</string>
+    <string name="milk">Молоко</string>
+    <string name="potato">Картошка</string>
+    <string name="rise">Рис</string>
+    <string name="grechka">Гречка</string>
+    <string name="green">Зелень</string>
+    <string name="cola">Кола</string>
+    <string name="chocholate">Шоколад</string>
+    <string name="what_i_need">Что мне выбрать?</string>
+    <string name="edittext_text">Введите название магазина и город</string>
+    <string name="button_search">Искать магазин</string>
+</resources>
