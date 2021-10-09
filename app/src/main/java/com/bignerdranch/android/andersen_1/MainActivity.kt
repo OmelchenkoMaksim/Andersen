@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 
 const val EXTRA_MESSAGE_MAIN: String =
     "com.big_nerd_ranch.android.andersen_1.main_activity.extra.MESSAGE"
-
 open class MainActivity : AppCompatActivity() {
 
     private var mCount: Int = 0
