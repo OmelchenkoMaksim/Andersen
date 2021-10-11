@@ -4,26 +4,24 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Rect
-import android.os.Build
 import android.util.AttributeSet
 import android.util.Log
 import android.util.TypedValue
 import android.view.View
+import androidx.core.content.ContextCompat
 import java.util.*
 import kotlin.math.cos
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sin
 
-class MyClock @JvmOverloads constructor(
+class ClockView @JvmOverloads constructor(
     context: Context,
     attr: AttributeSet? = null,
     defStyle: Int = 0
 ) : View(context, attr, defStyle) {
 
-    private var myHeight = 0
-    private var myWidth = 0
-    private var isInit = false
+    private var init = false
     private var min = 0
     private var max = 0
     private var fontSize = 0
@@ -33,39 +31,35 @@ class MyClock @JvmOverloads constructor(
     private var hourHandTruncation = 0
     private var numbers = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
     private val rect = Rect()
-    private lateinit var myPaint: Paint
+    private var myPaint: Paint = Paint()
 
-    private fun myInit() {
-        myHeight = height
-        myWidth = width
+    private fun init() {
         padding = 50
         fontSize = TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_SP, 13f,
             resources.displayMetrics
         ).toInt()
-        min = min(myHeight, myWidth)
-        max = max(myHeight, myWidth)
+        min = min(height, width)
+        max = max(height, width)
         radius = min / 2 - padding
-        myPaint = Paint().apply {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                color = context.getColor(R.color.black)
-            }
+        myPaint.apply {
+            color = ContextCompat.getColor(context, R.color.black)
             isAntiAlias = true
             style = Paint.Style.STROKE
             strokeWidth = 10f
-            isInit = true
+            init = true
             handTruncation = min / 18
             hourHandTruncation = min / 7
         }
     }
 
     override fun onDraw(canvas: Canvas) {
-        if (!isInit) {
-            myInit()
+        if (!init) {
+            init()
         }
         super.onDraw(canvas)
-        drawMyCircle(canvas)
-        drawMyCircleCenter(canvas)
+        drawClockCircle(canvas)
+        drawClockCenter(canvas)
         drawNumbers(canvas)
         drawHands(canvas)
 
@@ -76,9 +70,9 @@ class MyClock @JvmOverloads constructor(
         val angle = Math.PI * location / 30 - Math.PI / 2
         val handRadius = radius - handTruncation - hourHandTruncation
         canvas.drawLine(
-            (myWidth / 2).toFloat(), (myHeight / 2).toFloat(),
-            (myWidth / 2 + cos(angle) * handRadius).toFloat(),
-            (myHeight / 2 + sin(angle) * handRadius).toFloat(),
+            (width / 2).toFloat(), (height / 2).toFloat(),
+            (width / 2 + cos(angle) * handRadius).toFloat(),
+            (height / 2 + sin(angle) * handRadius).toFloat(),
             myPaint
         )
     }
@@ -89,9 +83,7 @@ class MyClock @JvmOverloads constructor(
         hour = if (hour > 12) hour - 12 else hour
         myPaint.apply {
             strokeWidth = 8f
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                color = context.getColor(R.color.black)
-            }
+            color = ContextCompat.getColor(context, R.color.black)
         }
         drawHand(canvas, ((hour + c[Calendar.MINUTE] / 60) * 5f).toDouble())
         drawMinute(canvas, c)
@@ -101,9 +93,7 @@ class MyClock @JvmOverloads constructor(
     private fun drawSecond(canvas: Canvas, c: Calendar) {
         myPaint.apply {
             strokeWidth = 4f
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                color = context.getColor(R.color.white)
-            }
+            color = ContextCompat.getColor(context, R.color.white)
         }
         drawMillisecondHand(
             canvas,
@@ -112,13 +102,12 @@ class MyClock @JvmOverloads constructor(
     }
 
     private fun drawMillisecondHand(canvas: Canvas, location: Double) {
-        Log.w("MyClock", "Location: $location")
         val angle = Math.PI * location / (30 * 1000) - Math.PI / 2
         val handRadius = radius - handTruncation
         canvas.drawLine(
-            (myWidth / 2).toFloat(), (myHeight / 2).toFloat(),
-            (myWidth / 2 + cos(angle) * handRadius).toFloat(),
-            (myHeight / 2 + sin(angle) * handRadius).toFloat(),
+            (width / 2).toFloat(), (height / 2).toFloat(),
+            (width / 2 + cos(angle) * handRadius).toFloat(),
+            (height / 2 + sin(angle) * handRadius).toFloat(),
             myPaint
         )
     }
@@ -126,9 +115,7 @@ class MyClock @JvmOverloads constructor(
     private fun drawMinute(canvas: Canvas, c: Calendar) {
         myPaint.apply {
             strokeWidth = 6f
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                color = context.getColor(R.color.dark_red)
-            }
+            color = ContextCompat.getColor(context, R.color.dark_red)
         }
         drawSecondMinuteHand(
             canvas,
@@ -141,9 +128,9 @@ class MyClock @JvmOverloads constructor(
         val angle = Math.PI * location / (30 * 60) - Math.PI / 2
         val handRadius = radius - handTruncation
         canvas.drawLine(
-            (myWidth / 2).toFloat(), (myHeight / 2).toFloat(),
-            (myWidth / 2 + cos(angle) * handRadius).toFloat(),
-            (myHeight / 2 + sin(angle) * handRadius).toFloat(),
+            (width / 2).toFloat(), (height / 2).toFloat(),
+            (width / 2 + cos(angle) * handRadius).toFloat(),
+            (height / 2 + sin(angle) * handRadius).toFloat(),
             myPaint
         )
     }
@@ -152,37 +139,30 @@ class MyClock @JvmOverloads constructor(
         myPaint.textSize = fontSize.toFloat()
         myPaint.apply {
             strokeWidth = 4f
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                color = context.getColor(R.color.dark_red)
-            }
+            color = ContextCompat.getColor(context, R.color.dark_red)
         }
         numbers.forEach { number ->
             myPaint.getTextBounds(number.toString(), 0, number.toString().length, rect)
             val angle = Math.PI / 6 * (number - 3)
-            val x = (myWidth / 2 + cos(angle) * radius - rect.width() / 2).toInt()
-            val y = (myHeight / 2 + sin(angle) * radius + rect.height() / 2).toInt()
+            val x = (width / 2 + cos(angle) * radius - rect.width() / 2).toInt()
+            val y = (height / 2 + sin(angle) * radius + rect.height() / 2).toInt()
             canvas.drawText(number.toString(), x.toFloat(), y.toFloat(), myPaint)
         }
     }
 
-    private fun drawMyCircle(canvas: Canvas) {
-        canvas.drawCircle(myWidth / 2.toFloat(), myHeight / 2.toFloat(), min / 2.05f,
+    private fun drawClockCircle(canvas: Canvas) {
+        canvas.drawCircle(width / 2.toFloat(), height / 2.toFloat(), min / 2.05f,
             myPaint.apply {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    color = context.getColor(R.color.dark_red)
-                }
+                color = ContextCompat.getColor(context, R.color.dark_red)
                 strokeWidth = 10f
-
                 style = Paint.Style.STROKE
             })
     }
 
-    private fun drawMyCircleCenter(canvas: Canvas) {
-        canvas.drawCircle(myWidth / 2.toFloat(), myHeight / 2.toFloat(), min / 100f,
+    private fun drawClockCenter(canvas: Canvas) {
+        canvas.drawCircle(width / 2.toFloat(), height / 2.toFloat(), min / 100f,
             myPaint.apply {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    color = context.getColor(R.color.black)
-                }
+                color = ContextCompat.getColor(context, R.color.black)
                 style = Paint.Style.FILL_AND_STROKE
             })
     }
